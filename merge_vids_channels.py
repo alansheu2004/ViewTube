@@ -1,3 +1,5 @@
+#code to merge the channel and search info together
+
 from googleapiclient.discovery import build
 import pandas as pd
 from dict_to_data import *
