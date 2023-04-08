@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --highlight-background: #FF4444;
+    --highlight-foreground: #FFFFFF;
+
+    --page-background: #DDDDDD;
+    --background: #FFFFFF;
+    --foreground: #282828;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("montserrat/Montserrat-Regular.otf");
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--page-background);
+}
+
+header {
+    background-color: var(--background);
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36pt;
+    color: var(--highlight-background);
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18pt;
+    color: var(--foreground);
+    margin-bottom: 20px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 12pt;
+    color: var(--foreground);
+}
+
+nav {
+    background-color: var(--highlight-background);
+    font-size: 0pt;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 10px;
+    width: 120px;
+    font-size: 12pt;
+    background-color: var(--highlight-background);
+    color: var(--highlight-foreground);
+    text-align: center;
+    border-right: 1px solid var(--highlight-foreground); 
+}
+
+nav a:first-of-type {
+    border-left: 1px solid var(--highlight-foreground); 
+}
+
+nav a:hover {
+
+}
+
+article {
+    width: 75%;
+    background-color: var(--background);
+    padding: 50px;
+    margin: auto;
+}

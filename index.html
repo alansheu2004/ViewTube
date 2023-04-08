@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Viewtube: A Youtube View Prediction Tool</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a>Prediction</a>
+            <a>About</a>
+        </nav>
+
+        <header>
+
+            <h1>ViewTube</h1>
+            <h2>A Youtube View Prediction Tool</h2>
+            <h5>by Alan Sheu & Tracy Sun <br /> UCSB Data Science</h5>
+        </header>
+
+        <article>
+            <h3>Video Info</h3>
+            <section>
+                <div>
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="2" >Cars & Vehicles</option>
+                        <option value="23">Comedy</option>
+                        <option value="27">Education</option>
+                        <option value="24">Entertainment</option>
+                        <option value="1" >Film & Animation</option>
+                        <option value="20">Gaming</option>
+                        <option value="26">How-to & Style</option>
+                        <option value="10">Music</option>
+                        <option value="25">News & Politics</option>
+                        <option value="29">Non-profits & Activism</option>
+                        <option value="22">People & Blogs</option>
+                        <option value="15">Pets & Animals</option>
+                        <option value="28">Science & Technology</option>
+                        <option value="17">Sport</option>
+                        <option value="19">Travel & Events</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" />
+                </div>
+                <div>
+                    <label for="title">Tags:</label>
+                    <textarea name="title" id="title" placeholder="Separate with commas..."></textarea>
+                </div>
+            </section>
+
+            <h3>Channel Info</h3>
+            <section>
+                <div>
+                    <label for="subs">Number of Subscribers:</label>
+                    <input type="number" name="subs" id="subs" />
+                </div>
+                <div>
+                    <label for="avgViews">Average View Count:</label>
+                    <input type="number" name="avgViews" id="avgViews" />
+                </div>
+            </section>
+        </article>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
