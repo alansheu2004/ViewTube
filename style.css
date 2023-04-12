@@ -79,7 +79,12 @@ nav a:first-of-type {
     border-left: 1px solid var(--highlight-foreground); 
 }
 
-nav a:hover {
+nav a:hover, input[type="submit"]:hover {
+    filter: brightness(90%);
+    cursor:pointer;
+}
+
+nav a:active, input[type="submit"]:active {
     filter: brightness(75%);
 }
 
@@ -95,6 +100,8 @@ h3 {
     background-color: var(--highlight-background);
     color: var(--highlight-foreground);
     padding: 5px 10px;
+    width: 50%;
+    margin: auto;
 }
 
 section {
@@ -134,7 +141,7 @@ textarea {
 input[type="submit"] {
     background-color: var(--highlight-background);
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 18pt;
     border: none;
     color: var(--highlight-foreground);
     padding: 10px 20px;
