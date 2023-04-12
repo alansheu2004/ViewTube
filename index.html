@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ViewTube: A Youtube View Prediction Tool</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a>Prediction</a>
+            <a>About</a>
+        </nav>
+
+        <header>
+
+            <h1><img src="images/ViewTube.png" alt="ViewTube" /> ViewTube</h1>
+            <h2>A Youtube View Prediction Tool</h2>
+        </header>
+
+        <article>
+
+            <form>
+                <h3>Video Info</h3>
+                <section>
+                    <div>
+                        <label for="category">Category<span class="req">*</span>:</label>
+                        <select name="category" id="category" required>
+                            <option value="" selected>--</option>
+                            <option value="2" >Cars & Vehicles</option>
+                            <option value="23">Comedy</option>
+                            <option value="27">Education</option>
+                            <option value="24">Entertainment</option>
+                            <option value="1" >Film & Animation</option>
+                            <option value="20">Gaming</option>
+                            <option value="26">How-to & Style</option>
+                            <option value="10">Music</option>
+                            <option value="25">News & Politics</option>
+                            <option value="29">Non-profits & Activism</option>
+                            <option value="22">People & Blogs</option>
+                            <option value="15">Pets & Animals</option>
+                            <option value="28">Science & Technology</option>
+                            <option value="17">Sport</option>
+                            <option value="19">Travel & Events</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="length">Video Length<span class="req">*</span>:</label>
+                        <select name="length" id="length" required>
+                            <option value="" selected>--</option>
+                            <option value="0">Youtube Short</option>
+                            <option value="1">Short Video (Under 4 min.)</option>
+                            <option value="2">Medium Video (4-20 min.)</option>
+                            <option value="3">Long Video (Over 20 min.)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="title">Title<span class="req">*</span>:</label>
+                        <input type="text" name="title" id="title" required />
+                    </div>
+                    <div>
+                        <label for="title">Tags:</label>
+                        <textarea name="title" id="title" placeholder="Separate with commas..." required></textarea>
+                    </div>
+                </section>
+
+                <h3>Channel Info</h3>
+                <section>
+                    <div>
+                        <label for="subs">Number of Subscribers<span class="req">*</span>:</label>
+                        <input type="number" name="subs" id="subs" />
+                    </div>
+                    <div>
+                        <label for="avgViews">Average View Count<span class="req">*</span>:</label>
+                        <input type="number" name="avgViews" id="avgViews" />
+                    </div>
+                </section>
+
+                <input type="submit" value="Predict!" />
+            </form>
+            
+        </article>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>

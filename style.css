@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --highlight-background: #FF0000;
+    --highlight-foreground: #FFFFFF;
+
+    --page-background: #DDDDDD;
+    --background: #FFFFFF;
+    --foreground: #282828;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("montserrat/Montserrat-Regular.otf");
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--page-background);
+}
+
+header {
+    background-color: var(--background);
+    padding: 20px;
+    border-bottom: 1px solid var(--foreground);
+    position: static;
+    top: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 30pt;
+    color: var(var(--foreground));
+    margin-bottom: 10px;
+}
+
+h1 img {
+    height: 25pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16pt;
+    color: var(--foreground);
+}
+
+h5 {
+    text-align: center;
+    font-size: 12pt;
+    color: var(--foreground);
+}
+
+nav {
+    background-color: var(--highlight-background);
+    font-size: 0pt;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 10px;
+    width: 120px;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: var(--highlight-background);
+    color: var(--highlight-foreground);
+    text-align: center;
+    border-right: 1px solid var(--highlight-foreground); 
+}
+
+nav a:first-of-type {
+    border-left: 1px solid var(--highlight-foreground); 
+}
+
+nav a:hover, input[type="submit"]:hover {
+    filter: brightness(90%);
+    cursor:pointer;
+}
+
+nav a:active, input[type="submit"]:active {
+    filter: brightness(75%);
+}
+
+article {
+    width: 75%;
+    background-color: var(--background);
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    background-color: var(--highlight-background);
+    color: var(--highlight-foreground);
+    padding: 5px 10px;
+    width: 50%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+section div {
+    display: inline-block;
+    flex: 1 1 250px;
+    padding: 5px 15px;
+}
+
+label {
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+span.req {
+    color: var(--highlight-background);
+}
+
+section input, select, textarea {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: var(--highlight-background);
+    font-weight: bold;
+    font-size: 18pt;
+    border: none;
+    color: var(--highlight-foreground);
+    padding: 10px 20px;
+    margin: 20px auto;
+}
