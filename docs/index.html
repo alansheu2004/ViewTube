@@ -30,6 +30,10 @@
                 <h3>Video Info</h3>
                 <section>
                     <div>
+                        <label for="title">Title<span class="req">*</span>:</label>
+                        <input type="text" name="title" id="title" required />
+                    </div>
+                    <div>
                         <label for="category">Category<span class="req">*</span>:</label>
                         <select name="category" id="category" required>
                             <option value="" selected>--</option>
@@ -50,7 +54,7 @@
                             <option value="19">Travel & Events</option>
                         </select>
                     </div>
-                    <div>
+                    <!-- <div>
                         <label for="length">Video Length<span class="req">*</span>:</label>
                         <select name="length" id="length" required>
                             <option value="" selected>--</option>
@@ -59,11 +63,12 @@
                             <option value="2">Medium Video (4-20 min.)</option>
                             <option value="3">Long Video (Over 20 min.)</option>
                         </select>
-                    </div>
+                    </div> -->
                     <div>
-                        <label for="title">Title<span class="req">*</span>:</label>
-                        <input type="text" name="title" id="title" required />
+                        <label for="thumbnail">Thumbnail <span class="req">*</span>:</label>
+                        <input type="file" id="thumbnail" name="thumbnail" accept="image/*">
                     </div>
+                    
                     <div>
                         <label for="title">Tags:</label>
                         <textarea name="title" id="title" placeholder="Separate with commas..." required></textarea>
