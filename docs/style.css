@@ -134,6 +134,10 @@ section input, select, textarea {
     padding: 5px;
 }
 
+section input[type="file"] {
+    text-align: center;
+}
+
 textarea {
     resize: vertical;
 }
@@ -146,4 +150,8 @@ input[type="submit"] {
     color: var(--highlight-foreground);
     padding: 10px 20px;
     margin: 20px auto;
+}
+
+div#results {
+    display: none;
 }

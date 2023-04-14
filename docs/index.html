@@ -26,7 +26,7 @@
 
         <article>
 
-            <form>
+            <form id="form" action="" method="post">
                 <h3>Video Info</h3>
                 <section>
                     <div>
@@ -70,8 +70,8 @@
                     </div>
                     
                     <div>
-                        <label for="title">Tags:</label>
-                        <textarea name="title" id="title" placeholder="Separate with commas..." required></textarea>
+                        <label for="tags">Tags:</label>
+                        <textarea name="tags" id="tags" placeholder="Separate with commas..."></textarea>
                     </div>
                 </section>
 
@@ -82,13 +82,21 @@
                         <input type="number" name="subs" id="subs" />
                     </div>
                     <div>
+                        <label for="numVideos">Number of Videos<span class="req">*</span>:</label>
+                        <input type="number" name="numVideos" id="numVideos" />
+                    </div>
+                    <div>
                         <label for="avgViews">Average View Count<span class="req">*</span>:</label>
                         <input type="number" name="avgViews" id="avgViews" />
                     </div>
                 </section>
 
-                <input type="submit" value="Predict!" />
+                <input value="Predict!" type="submit" />
             </form>
+
+            <div id="results">
+
+            </div>
             
         </article>
 
@@ -96,4 +104,6 @@
             
         </footer>
     </body>
+
+    <script src="script.js"></script>
 </html>
