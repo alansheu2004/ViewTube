@@ -1,0 +1,8 @@
+Flask
+gunicorn
+flask-cors
+xgboost
+pandas
+numpy
+img2vec_pytorch
+gensim

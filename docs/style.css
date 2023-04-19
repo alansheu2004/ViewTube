@@ -110,13 +110,13 @@ section {
     flex-wrap: wrap;
 }
 
-section div {
+section > div {
     display: inline-block;
     flex: 1 1 250px;
     padding: 5px 15px;
 }
 
-label {
+section > div > label:first-of-type {
     display: block;
     font-size: 12pt;
     font-weight: bold;
@@ -127,9 +127,15 @@ span.req {
     color: var(--highlight-background);
 }
 
-section input, select, textarea {
+section > div > input, select, textarea {
     display: block;
     width: 100%;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+section input[type="radio"] {
+    display: inline-block;
     font-size: 12pt;
     padding: 5px;
 }
@@ -152,6 +158,20 @@ input[type="submit"] {
     margin: 20px auto;
 }
 
-div#results {
+div#results, div#loading {
     display: none;
+    padding: 50px;
+}
+
+img#loadingImg {
+    width: 50%;
+}
+
+footer {
+    padding: 30px;
+    background-color: var(--highlight-background);
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    font-weight:  bold;
 }

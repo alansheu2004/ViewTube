@@ -91,8 +91,27 @@
                     </div>
                 </section>
 
+                <h3>Other Info</h3>
+                <section>
+                    <div>
+                        <label>Time Span<span class="req">*</span>:</label>
+                        <div class="radioGroup">
+                            <input type="radio" id="10d" name="timeTotal" value="10">
+                            <label for="10d">10 Days</label><br>
+                            <input type="radio" id="100d" name="timeTotal" value="100" checked>
+                            <label for="100d">100 Days</label><br>
+                            <input type="radio" id="365d" name="timeTotal" value="365">
+                            <label for="365d">1 Year</label><br>
+                        </div>
+                    </div>
+                </section>
+
                 <input value="Predict!" type="submit" />
             </form>
+
+            <div id="loading">
+                <img id="loadingImg" alt="loading" src="images/loading.gif"/>
+            </div>
 
             <div id="results">
 
@@ -101,9 +120,13 @@
         </article>
 
         <footer>
-            
+            <p>
+                Created by Alan Sheu and Tracy Sun <br />
+                UCSB Data Science
+            </p>
         </footer>
     </body>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
 </html>
